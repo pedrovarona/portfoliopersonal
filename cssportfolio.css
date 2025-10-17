@@ -122,6 +122,11 @@ main{
   padding-top: var(--header-h);
 }
 
+/* Clase utilitaria para aplicar desplazamiento al contenido cuando no se usa <main> */
+.offset-nav{
+  padding-top: calc(var(--header-h) + 12px);
+}
+
 /* =========================================================
    PORTADA (HERO)
    ========================================================= */
