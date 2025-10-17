@@ -766,6 +766,11 @@ main{
   align-items: center;
   gap: 12px;
 }
+.site-footer .copyright{
+  font-size: 13px;
+  color: #6b7280; /* gris tenue */
+  line-height: 1;
+}
 .footer-right{
   display: flex;
   align-items: center;
