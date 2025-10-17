@@ -96,6 +96,15 @@ section{
   transform: translateY(-1px);
 }
 
+/* Estado activo por clase*/
+.nav a.active{
+  color: #2563eb;
+  text-shadow: 0 0 8px rgba(37,99,235,.7);
+  opacity: .95;
+  font-weight: 700;
+  transform: none;
+}
+
 
 
 /* Mini-bloque de contacto del header (icono LinkedIn + teléfono) */
