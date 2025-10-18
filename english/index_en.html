@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Portfolio personal de Pedro Varona Parra" />
-  <title>Mi Portfolio</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="../cssportfolio.css" />
 </head>
 <body id="top">
@@ -12,14 +12,14 @@
   <!-- ===== NavBar ===== -->
   <header class="topbar">
     <div class="container">
-      <a class="brand" href="index_en.html" aria-label="Ir al inicio">Pedro Varona</a>
+  <a class="brand" href="index_en.html" aria-label="Go to homepage">Pedro Varona</a>
 
       <div class="right-side">
         <nav class="nav">
-          <a href="index_es.html" class="active">Sobre mí</a>
-          <a href=educacion_es.html>Educación</a>
-          <a href=proyectos_es.html>Proyectos</a>
-          <a href="contacto_es.html">Contacto</a>
+          <a href="index_en.html" class = "active">About me</a>
+          <a href=education_en.html>Education</a>
+          <a href=projects_en.html>Projects</a>
+          <a href="contact_en.html">Contact</a>
         </nav>
 
         <div class="top-contact">
@@ -36,41 +36,41 @@
   </header>
 
   <main>
-    <!-- ===== Portada ===== -->
+    <!-- ===== Hero ===== -->
     <section id="hero" class="hero">
       <h1 class="hero-name">Pedro Varona</h1>
-      <h2 class="hero-title">Estudiante de Ingeniería de Sistemas de Información</h2>
+      <h2 class="hero-title">Information Systems Engineering Student</h2>
       <p class="hero-desc">
-        Soy estudiante de cuarto año de Ingeniería Informática con formación en desarrollo de software, estructuras de datos y administración de sistemas. Me caracterizo por mi capacidad de análisis, resolución de problemas y aprendizaje rápido de nuevas tecnologías. Tengo un gran interés en el desarrollo web, bases de datos e inteligencia artificial.
+        I am a fourth-year Information Systems Engineering student with training in software development, data structures and systems administration. I stand out for my analytical skills, problem solving and fast learning of new technologies. I have a strong interest in web development, databases and artificial intelligence.
       </p>
       <div class="hero-cta">
-        <a href="#sobre-mi" class="btn btn-primary">Más sobre mí</a>
-        <a href="contacto.html" class="btn btn-outline">Contacto</a>
+        <a href="#about-me" class="btn btn-primary">More about me</a>
+        <a href="contact_en.html" class="btn btn-outline">Contact</a>
       </div>
     </section>
 
-    <!-- ===== Sobre mí ===== -->
-    <section id="sobre-mi" class="about">
+    <!-- ===== About me ===== -->
+    <section id="about-me" class="about">
       <div class="shell">
         <div class="about-grid">
           <!-- Perfil -->
           <article class="card profile">
-            <h3>Mi Perfil</h3>
+            <h3>About me</h3>
             <p>
-              Soy un estudiante de cuarto año de Ingeniería de Sistemas de Información, especializado en
-              desarrollo de software y administración de sistemas. Me caracterizo por mis habilidades
-              analíticas y de resolución de problemas, así como por la rápida capacidad para aprender
-              nuevas tecnologías.
+              I am a fourth-year Information Systems Engineering student, specialized in
+              software development and systems administration. I am characterized by my analytical
+              skills and problem-solving ability, as well as a fast aptitude for learning
+              new technologies.
             </p>
             <p>
-              Busco oportunidades donde aplicar mis conocimientos académicos, ganar experiencia práctica
-              en proyectos reales y aportar valor a través del entusiasmo, responsabilidad y trabajo en equipo.
+              I am looking for opportunities to apply my academic knowledge, gain practical
+              experience on real projects and contribute value through enthusiasm, responsibility and teamwork.
             </p>
           </article>
 
-          <!-- Habilidades técnicas -->
+          <!-- Technical skills -->
           <aside class="card skills">
-            <h3>Habilidades Técnicas</h3>
+            <h3>Technical Skills</h3>
             <div class="pillset">
               <span class="pill">Python</span>
               <span class="pill">SQL</span>
@@ -83,16 +83,16 @@
             </div>
           </aside>
 
-          <!-- Idiomas -->
+          <!-- Languages -->
           <aside class="card languages">
-            <h3>Idiomas</h3>
+            <h3>Languages</h3>
             <div class="lang-row">
-              <span>Español</span>
-              <span class="badge" aria-label="nivel nativo">Nativo</span>
+              <span>Spanish</span>
+              <span class="badge" aria-label="native level">Native</span>
             </div>
             <div class="lang-row">
-              <span>Inglés</span>
-              <span class="badge" aria-label="nivel fluido">Fluido</span>
+              <span>English</span>
+              <span class="badge" aria-label="fluent level">Fluent</span>
             </div>
           </aside>
         </div>
@@ -124,8 +124,8 @@
         </div>
 
         <div class="lang-switch" role="group" aria-label="Seleccion idioma">
-          <button type="button" class="active" href = "../español/index_es.html">ES</button>
-            <button type="button" aria-pressed="false" aria-pressed="true">EN</button>
+          <button type="button" aria-pressed="false" onclick="window.location.href='../español/index_es.html'">ES</button>
+          <button type="button" class="active" aria-pressed="true">EN</button>
         </div>
       </div>
     </footer>
