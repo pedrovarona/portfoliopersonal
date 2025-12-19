@@ -28,96 +28,185 @@
       </div>
     </div>
   </header>
-    <!-- ===== Educación: Universidad, Bachillerato y Certificaciones ===== -->
+
+  <main>
+    <!-- ===== Formación Académica: Línea Temporal ===== -->
     <section id="educacion" class="edu">
       <div class="shell">
-        <h2 class="section-title">Educación</h2>
+        <h2 class="section-title-timeline">Formación Académica</h2>
 
-        <!-- Universidad -->
-        <article class="card edu-card">
-          <header class="edu-head">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="currentColor" d="M12 3 1 8l11 5 9-4.09V17h2V8L12 3Zm0 9L4.18 8 12 4.82 19.82 8 12 12Zm-6 2.5V16a6 6 0 0 0 12 0v-1.5l-6 2.73-6-2.73Z"/>
-            </svg>
-            <h3>Universidad Ceu San Pablo</h3>
-          </header>
-
-          <p class="degree">Grado en Ingeniería de Sistemas de Información</p>
-
-          <div class="meta">
-            <span class="meta-item">
-              <svg class="i" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg>
-              Madrid, España
-            </span>
-            <span class="meta-item">
-              <svg class="i" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10v2h3a1 1 0 0 1 1 1v15a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a1 1 0 0 1 1-1h3V2Zm12 6H5v12h14V8ZM9 2v2h6V2H9Z"/></svg>
-              Septiembre 2022 — Presente
-            </span>
+        <!-- Timeline Container -->
+        <div class="timeline">
+          
+          <!-- Universidad CEU -->
+          <div class="timeline-item timeline-right">
+            <div class="timeline-icon timeline-icon-university">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 13.27L3.18 11 12 5.73 20.82 11 12 16.27z"/>
+                <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+              </svg>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Ingeniería de Sistemas de Información</h3>
+                <span class="timeline-date">2021 - Actualidad</span>
+              </div>
+              <div class="timeline-institution">
+                <svg class="institution-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                </svg>
+                <span>Universidad CEU San Pablo</span>
+              </div>
+              <p class="timeline-description">
+                Actualmente curso el grado en Ingeniería Informática, donde estoy adquiriendo una formación sólida en desarrollo de software, arquitectura de sistemas y gestión de proyectos tecnológicos. Esta etapa me está permitiendo fortalecer mis habilidades técnicas y analíticas, además de comprender en profundidad cómo la tecnología puede aportar soluciones innovadoras a distintos ámbitos.
+              </p>
+              <div class="timeline-chips">
+                <span class="chip">Programación</span>
+                <span class="chip">Sistemas Web</span>
+                <span class="chip">Inteligencia Artificial</span>
+                <span class="chip">Máquinas Virtuales</span>
+                <span class="chip">Redes de Ordenadores</span>
+                <span class="chip">Ingeniería del Software</span>
+                <span class="chip">Análisis y Gestión Financiera</span>
+              </div>
+            </div>
           </div>
 
-          <h4 class="kicker">Materias Relevantes:</h4>
-          <div class="pillset small">
-            <span class="pill">Programación I y II</span>
-            <span class="pill">Inteligencia Artificial</span>
-            <span class="pill">Programación en Entornos Distribuidos</span>
-            <span class="pill">Sistemas Web I & II</span>
-            <span class="pill">Ingeniería del Software</span>
-            <span class="pill">Redes de Ordenadores I y II</span>
-            <span class="pill">Modelos de Computación</span>
-            <span class="pill">Fundamentos Físicos de la Informática</span>
-            <span class="pill">Fundamentos Matemáticos I y II</span>
-            <span class="pill">Estadística</span>
+          <!-- Curso IA y Prompt Engineering -->
+          <div class="timeline-item timeline-left">
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Introducción a la IA y Prompt Engineering</h3>
+                <span class="timeline-date">Julio 2025</span>
+              </div>
+              <div class="timeline-institution">
+                <svg class="institution-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                </svg>
+                <span>Founderz</span>
+              </div>
+              <p class="timeline-description">
+                Curso enfocado en los fundamentos de la inteligencia artificial y técnicas avanzadas de prompt engineering para optimizar interacciones con modelos de lenguaje.
+              </p>
+              <div class="timeline-chips">
+                <span class="chip">Inteligencia Artificial</span>
+                <span class="chip">Prompt Engineering</span>
+                <span class="chip">LLM</span>
+              </div>
+              <a href="https://learn.founderz.com/certificado/curso-online-introduccion-a-la-ia-y-prompt-engineering/d06c0594-cf8f-4b80-9347-0f97fe504121" target="_blank" rel="noopener noreferrer" class="certificate-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                </svg>
+                <span>Ver</span>
+              </a>
+            </div>
+            <div class="timeline-icon timeline-icon-course">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/>
+              </svg>
+            </div>
           </div>
 
-          <div class="highlight">
-            <strong>Proyecto Destacado:</strong>
-            <p>Proyecto Universitario: Base de Datos SQL inspirada en Spotify.</p>
+          <!-- Curso Microsoft AI -->
+          <div class="timeline-item timeline-right">
+            <div class="timeline-icon timeline-icon-course">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/>
+              </svg>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Transforma tu negocio con Microsoft AI</h3>
+                <span class="timeline-date">Julio 2025</span>
+              </div>
+              <div class="timeline-institution">
+                <svg class="institution-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                </svg>
+                <span>Microsoft Learning</span>
+              </div>
+              <p class="timeline-description">
+                Programa formativo introductorio en el que se abordó el impacto de la inteligencia artificial en el ámbito empresarial, así como el uso general de soluciones de IA de Microsoft y Azure. El curso ofreció una visión global sobre el potencial de la IA para la transformación digital, la automatización de procesos y la toma de decisiones.
+              <div class="timeline-chips">
+                <span class="chip">IA Empresarial</span>
+                <span class="chip">Azure AI</span>
+                <span class="chip">Transformación Digital</span>
+              </div>
+              <a href="https://learn.microsoft.com/en-us/users/pedrovarona-2564/achievements/d97hf3bj?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer" class="certificate-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                </svg>
+                <span>Ver</span>
+              </a>
+            </div>
           </div>
-        </article>
 
-        <!-- Bachillerato -->
-        <article class="card edu-card">
-          <header class="edu-head">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="currentColor" d="M12 3 1 8l11 5 9-4.09V17h2V8L12 3Zm0 9L4.18 8 12 4.82 19.82 8 12 12Zm-6 2.5V16a6 6 0 0 0 12 0v-1.5l-6 2.73-6-2.73Z"/>
-            </svg>
-            <h3>Instituto / Centro (Bachillerato)</h3>
-          </header>
-          <p class="degree">Instituto Ceu Claudio Coello</p>
-          <div class="meta">
-            <span class="meta-item">
-              <svg class="i" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg>
-              Madrid, España
-            </span>
-            <span class="meta-item">
-              <svg class="i" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10v2h3a1 1 0 0 1 1 1v15a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a1 1 0 0 1 1-1h3V2Zm12 6H5v12h14V8ZM9 2v2h6V2H9Z"/></svg>
-              2019 — 2022
-            </span>
+          <!-- Curso Empleabilidad -->
+          <div class="timeline-item timeline-left">
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Mejora tu empleabilidad desarrollando tu capacidad para (intra)emprender</h3>
+                <span class="timeline-date">Mayo 2025</span>
+              </div>
+              <div class="timeline-institution">
+                <svg class="institution-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                </svg>
+                <span>BeForGet</span>
+              </div>
+              <p class="timeline-description">
+                Taller enfocado en el desarrollo de habilidades para reconocer y comunicar mi valor profesional. A través de distintas dinámicas y ejercicios prácticos, aprendí a identificar mis fortalezas, crear un perfil profesional diferenciado y desarrollar competencias clave de emprendimiento e intraemprendimiento que potencien mi empleabilidad.
+              </p>
+              <div class="timeline-chips">
+                <span class="chip">Emprendimiento</span>
+                <span class="chip">Empleabilidad</span>
+                <span class="chip">Intraemprendimiento</span>
+              </div>
+              <a href="https://www.credential.net/2300e992-da95-4206-9920-6dde6193fe1a#acc.BSwZtprf" target="_blank" rel="noopener noreferrer" class="certificate-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                </svg>
+                <span>Ver</span>
+              </a>
+            </div>
+            <div class="timeline-icon timeline-icon-course">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/>
+              </svg>
+            </div>
           </div>
 
-          <h4 class="kicker">Asignaturas Destacadas:</h4>
-          <div class="pillset small">
-            <span class="pill">Matemáticas I y II</span>
-            <span class="pill">Física I y II</span>
-            <span class="pill">Tecnología</span>
-            <span class="pill">Dibujo Técnico</span>
+          <!-- Bachillerato -->
+          <div class="timeline-item timeline-right">
+            <div class="timeline-icon timeline-icon-school">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+              </svg>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Bachillerato Tecnológico</h3>
+                <span class="timeline-date">2019 - 2021</span>
+              </div>
+              <div class="timeline-institution">
+                <svg class="institution-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                </svg>
+                <span>Colegio CEU San Pablo</span>
+              </div>
+              <p class="timeline-description">
+                Cursé el Bachillerato Tecnológico con un enfoque en ciencias y tecnología, lo que me permitió adquirir una base sólida en materias técnicas y científicas. Durante esta etapa desarrollé el pensamiento lógico, la capacidad de análisis y el interés por la innovación y la resolución de problemas, sentando las bases para mi formación en el ámbito tecnológico.
+              </p>
+              <div class="timeline-chips">
+                <span class="chip">Matemáticas</span>
+                <span class="chip">Física</span>
+                <span class="chip">Dibujo Técnico</span>
+                <span class="chip">Tecnología</span>
+              </div>
+            </div>
           </div>
-        </article>
 
-        <!-- Certificaciones y formación -->
-        <article class="card cert-list">
-          <header class="edu-head">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="currentColor" d="M5 3h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-3l-4 5-4-5H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/>
-            </svg>
-            <h3>Certificaciones y Formación</h3>
-          </header>
-          <ul class="cert-ul">
-            <li><span>Introducción a la IA y Prompt Engineering (Founderz)</span></li>
-            <li><span>Transform your business with Microsoft AI (Microsoft Learning)</span></li>
-            <li><span>Mejora tu empleabilidad desarrollando tu capacidad para (intra)emprender (BeForGet)</span></li>
-          </ul>
-        </article>
+        </div>
       </div>
     </section>
     </section>
@@ -151,4 +240,6 @@
           </div>
       </div>
     </footer>
+  </main>
   </body>
+</html>
