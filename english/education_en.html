@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio personal de Pedro Varona Parra" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="../cssportfolio.css" />
+</head>
+<body id="top" class="offset-nav">
+
+  <!-- ===== NavBar ===== -->
+  <header class="topbar">
+    <div class="container">
+  <a class="brand" href="index_en.html" aria-label="Go to homepage">Pedro Varona</a>
+
+      <div class="right-side">
+        <nav class="nav">
+          <a href="index_en.html">About me</a>
+          <a href=education_en.html class = "active">Education</a>
+          <a href=projects_en.html>Projects</a>
+          <a href="contact_en.html">Contact</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Seleccion idioma">
+            <button type="button" aria-pressed="false" onclick="window.location.href='../español/educacion_es.html'">ES</button>
+            <button type="button" class="active" aria-pressed="true">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+    <!-- ===== Education: University, High School and Certifications ===== -->
+    <section id="education" class="edu">
+      <div class="shell">
+        <h2 class="section-title">Education</h2>
+
+        <!-- Universidad -->
+        <article class="card edu-card">
+          <header class="edu-head">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M12 3 1 8l11 5 9-4.09V17h2V8L12 3Zm0 9L4.18 8 12 4.82 19.82 8 12 12Zm-6 2.5V16a6 6 0 0 0 12 0v-1.5l-6 2.73-6-2.73Z"/>
+            </svg>
+            <h3>Ceu San Pablo University</h3>
+          </header>
+
+          <p class="degree">Bachelor's Degree in Information Systems Engineering</p>
+
+          <div class="meta">
+            <span class="meta-item">
+              <svg class="i" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg>
+              Madrid, Spain
+            </span>
+            <span class="meta-item">
+              <svg class="i" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10v2h3a1 1 0 0 1 1 1v15a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a1 1 0 0 1 1-1h3V2Zm12 6H5v12h14V8ZM9 2v2h6V2H9Z"/></svg>
+              September 2022 — Present
+            </span>
+          </div>
+
+          <h4 class="kicker">Relevant Courses:</h4>
+          <div class="pillset small">
+            <span class="pill">Programming I & II</span>
+            <span class="pill">Artificial Intelligence</span>
+            <span class="pill">Distributed Systems Programming</span>
+            <span class="pill">Web Systems I & II</span>
+            <span class="pill">Software Engineering</span>
+            <span class="pill">Computer Networks I & II</span>
+            <span class="pill">Theory of Computation</span>
+            <span class="pill">Foundations of Computer Science</span>
+            <span class="pill">Mathematics I & II</span>
+            <span class="pill">Statistics</span>
+          </div>
+
+          <div class="highlight">
+            <strong>Featured Project:</strong>
+            <p>University project: SQL database inspired by Spotify.</p>
+          </div>
+        </article>
+
+        <!-- Bachillerato -->
+        <article class="card edu-card">
+          <header class="edu-head">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M12 3 1 8l11 5 9-4.09V17h2V8L12 3Zm0 9L4.18 8 12 4.82 19.82 8 12 12Zm-6 2.5V16a6 6 0 0 0 12 0v-1.5l-6 2.73-6-2.73Z"/>
+            </svg>
+            <h3>High School</h3>
+          </header>
+          <p class="degree">Ceu Claudio Coello High School</p>
+          <div class="meta">
+            <span class="meta-item">
+              <svg class="i" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg>
+              Madrid, Spain
+            </span>
+            <span class="meta-item">
+              <svg class="i" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10v2h3a1 1 0 0 1 1 1v15a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a1 1 0 0 1 1-1h3V2Zm12 6H5v12h14V8ZM9 2v2h6V2H9Z"/></svg>
+              2019 — 2022
+            </span>
+          </div>
+
+          <h4 class="kicker">Highlighted Subjects:</h4>
+          <div class="pillset small">
+            <span class="pill">Mathematics I & II</span>
+            <span class="pill">Physics I & II</span>
+            <span class="pill">Technology</span>
+            <span class="pill">Technical Drawing</span>
+          </div>
+        </article>
+
+        <!-- Certificaciones y formación -->
+        <article class="card cert-list">
+          <header class="edu-head">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M5 3h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-3l-4 5-4-5H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/>
+            </svg>
+            <h3>Certifications & Training</h3>
+          </header>
+          <ul class="cert-ul">
+            <li><span>Introduction to AI and Prompt Engineering (Founderz)</span></li>
+            <li><span>Transform your business with Microsoft AI (Microsoft Learning)</span></li>
+            <li><span>Improve your employability by developing your capacity to (intra)entrepreneur (BeForGet)</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer">
+      <div class="shell">
+        <div class="footer-left">
+          <div class="copyright">© 2025 Pedro Varona. All rights reserved.</div>
+        </div>
+
+        <div class="footer-right">
+          <div class="socials" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/pedrovaronaparra/" target="_blank" aria-label="LinkedIn" onmouseover="this.style.color='#0A66C2'" onmouseout="this.style.color=''">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8.5h5V24H0V8.5zM8.5 8.5h4.79v2.07h.07c.67-1.27 2.3-2.6 4.73-2.6 5.05 0 5.98 3.33 5.98 7.66V24h-5V16.3c0-1.86-.03-4.26-2.6-4.26-2.6 0-3 2.04-3 4.14V24H8.5V8.5z" fill="currentColor"/>
+            </svg>
+          </a>
+
+          <a href="https://github.com/pedrovarona" target="_blank" aria-label="GitHub" onmouseover="this.style.color='#181717'" onmouseout="this.style.color=''">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.38 7.86 10.9.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.36-1.3-1.72-1.3-1.72-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.75.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.17 1.18a11 11 0 012.88-.39c.98 0 1.98.13 2.89.39 2.19-1.5 3.16-1.18 3.16-1.18.64 1.59.24 2.77.12 3.06.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.28 5.68.42.36.8 1.08.8 2.18 0 1.58-.01 2.86-.01 3.25 0 .31.21.68.8.56C20.2 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z" fill="currentColor"/>
+            </svg>
+          </a>
+
+          <a href="mailto:pedro.varona.parra@icloud.com" target="_blank" aria-label="Enviar correo" onmouseover="this.style.color='#D44638'" onmouseout="this.style.color=''">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+            </svg>
+          </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
