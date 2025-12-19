@@ -32,68 +32,302 @@
   <main>
     <!-- ===== Portada ===== -->
     <section id="hero" class="hero">
-      <h1 class="hero-name">Pedro Varona</h1>
-      <h2 class="hero-title">Estudiante de Ingeniería de Sistemas de Información</h2>
-      <p class="hero-desc">
-        Soy estudiante de cuarto año de Ingeniería Informática con formación en desarrollo de software, estructuras de datos y administración de sistemas. Me caracterizo por mi capacidad de análisis, resolución de problemas y aprendizaje rápido de nuevas tecnologías. Tengo un gran interés en el desarrollo web, bases de datos e inteligencia artificial.
-      </p>
-      <div class="hero-cta">
-        <a href="#sobre-mi" class="btn btn-primary">Más sobre mí</a>
-        <a href="contacto_es.html" class="btn btn-outline">Contacto</a>
+      <div class="hero-content">
+        <h1 class="hero-name animate-fade-in">Pedro Varona</h1>
+        <h2 class="hero-title animate-fade-in-up">
+          <span id="typewriter-text"></span>
+          <span class="cursor">|</span>
+        </h2>
+        <div class="hero-cta animate-fade-in-up-delay">
+          <a href="contacto_es.html" class="btn btn-hero-primary">Contáctame</a>
+          <a href="YOUR_CV_URL_HERE" target="_blank" rel="noopener noreferrer" class="btn btn-hero-outline">Currículum</a>
+        </div>
       </div>
+      <!-- Flecha indicadora de scroll -->
+      <a href="#sobre-mi" class="scroll-indicator animate-bounce-in" aria-label="Ver más contenido">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
     </section>
 
     <!-- ===== Sobre mí ===== -->
     <section id="sobre-mi" class="about">
       <div class="shell">
-        <div class="about-grid">
-          <!-- Perfil -->
-          <article class="card profile">
+        <h2 class="section-title">Sobre Mí</h2>
+        <div class="about-content">
+          <article class="card profile-full">
             <h3>Mi Perfil</h3>
             <p>
-              Soy un estudiante de cuarto año de Ingeniería de Sistemas de Información, especializado en
-              desarrollo de software y administración de sistemas. Me caracterizo por mis habilidades
-              analíticas y de resolución de problemas, así como por la rápida capacidad para aprender
-              nuevas tecnologías.
+              Soy estudiante de cuarto año de Ingeniería de Sistemas de Información, con una base sólida en desarrollo de software y sistemas informáticos. Me caracterizo por mis habilidades analíticas, la resolución de problemas y la capacidad para aprender y adaptarme rápidamente a nuevas tecnologías.
+            </p>
+            <p>
+              Además del ámbito técnico, tengo un especial interés en la parte comercial y en el trabajo con personas, valorando la comunicación, la comprensión de necesidades y la colaboración como elementos clave para aportar valor en entornos profesionales.
             </p>
             <p>
               Busco oportunidades donde aplicar mis conocimientos académicos, ganar experiencia práctica
               en proyectos reales y aportar valor a través del entusiasmo, responsabilidad y trabajo en equipo.
             </p>
           </article>
+        </div>
+      </div>
+    </section>
 
-          <!-- Habilidades técnicas -->
-          <aside class="card skills">
-            <h3>Habilidades Técnicas</h3>
-            <div class="pillset">
-              <span class="pill">Python</span>
-              <span class="pill">SQL</span>
-              <span class="pill">C</span>
-              <span class="pill">HTML</span>
-              <span class="pill">CSS</span>
-              <span class="pill">JavaScript</span>
-              <span class="pill">XML</span>
-              <span class="pill">R</span>
-            </div>
-          </aside>
+    <!-- ===== Habilidades Técnicas ===== -->
+    <section id="habilidades" class="skills-section">
+      <div class="shell">
+        <h2 class="section-title">Habilidades Técnicas</h2>
+        
+        <!-- Programación -->
+        <div class="skills-category">
+          <h3 class="category-title">
+            <svg class="category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            Programación
+          </h3>
+          <div class="pillset with-icons">
+            <span class="pill" data-tech="python">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" class="tech-icon">
+              Python
+            </span>
+            <span class="pill" data-tech="java">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java logo" class="tech-icon">
+              Java
+            </span>
+            <span class="pill" data-tech="c">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C logo" class="tech-icon">
+              C
+            </span>
+            <span class="pill" data-tech="javascript">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo" class="tech-icon">
+              JavaScript
+            </span>
+            <span class="pill" data-tech="r">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R logo" class="tech-icon">
+              R
+            </span>
+            <span class="pill" data-tech="prolog">
+              <svg class="tech-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"></circle>
+                <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"></circle>
+              </svg>
+              Prolog
+            </span>
+            <span class="pill" data-tech="html">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML logo" class="tech-icon">
+              HTML
+            </span>
+            <span class="pill" data-tech="css">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS logo" class="tech-icon">
+              CSS
+            </span>
+          </div>
+        </div>
 
-          <!-- Idiomas -->
-          <aside class="card languages">
-            <h3>Idiomas</h3>
-            <div class="lang-row">
-              <span>Español</span>
-              <span class="badge" aria-label="nivel nativo">Nativo</span>
+        <!-- Frameworks & Entornos -->
+        <div class="skills-category">
+          <h3 class="category-title">
+            <svg class="category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+            Frameworks & Entornos
+          </h3>
+          <div class="pillset with-icons">
+            <span class="pill" data-tech="nodejs">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js logo" class="tech-icon">
+              Node.js
+            </span>
+            <span class="pill" data-tech="express">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js logo" class="tech-icon">
+              Express.js
+            </span>
+            <span class="pill" data-tech="bootstrap">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap logo" class="tech-icon">
+              Bootstrap
+            </span>
+          </div>
+        </div>
+
+        <!-- Bases de Datos -->
+        <div class="skills-category">
+          <h3 class="category-title">
+            <svg class="category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+            Bases de Datos
+          </h3>
+          <div class="pillset with-icons">
+            <span class="pill" data-tech="mysql">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL logo" class="tech-icon">
+              MySQL
+            </span>
+            <span class="pill" data-tech="sqlite">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite logo" class="tech-icon">
+              SQLite
+            </span>
+          </div>
+        </div>
+
+        <!-- Herramientas -->
+        <div class="skills-category">
+          <h3 class="category-title">
+            <svg class="category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
+            Herramientas
+          </h3>
+          <div class="pillset with-icons">
+            <span class="pill" data-tech="git">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git logo" class="tech-icon">
+              Git
+            </span>
+            <span class="pill" data-tech="github">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub logo" class="tech-icon">
+              GitHub
+            </span>
+            <span class="pill" data-tech="cisco">
+              <svg class="tech-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+              Cisco Packet Tracer
+            </span>
+            <span class="pill" data-tech="office">
+              <svg class="tech-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+                <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+                <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+                <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+              </svg>
+              Microsoft Office
+            </span>
+            <span class="pill" data-tech="conda">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" alt="Conda logo" class="tech-icon">
+              Conda
+            </span>
+            <span class="pill" data-tech="pycharm">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm logo" class="tech-icon">
+              PyCharm
+            </span>
+          </div>
+        </div>
+
+        <!-- Otros Conocimientos -->
+        <div class="skills-category">
+          <h3 class="category-title">
+            <svg class="category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            Otros Conocimientos
+          </h3>
+          <div class="pillset with-icons">
+            <span class="pill" data-tech="finance">
+              <svg class="tech-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+              Gestión y Análisis Financiero
+            </span>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-category">
+          <h3 class="category-title">
+            <svg class="category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            Soft Skills
+          </h3>
+          <div class="pillset">
+            <span class="pill">Trabajo en Equipo</span>
+            <span class="pill">Resolutivo</span>
+            <span class="pill">Capacidad de Adaptación</span>
+            <span class="pill">Rapidez de Aprendizaje</span>
+            <span class="pill">Creatividad</span>
+          </div>
+        </div>
+
+        <!-- Idiomas -->
+        <div class="skills-category">
+          <h3 class="category-title">
+            <svg class="category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            Idiomas
+          </h3>
+          <div class="languages-grid">
+            <div class="lang-item">
+              <span class="lang-name">Español</span>
+              <span class="badge lang-level">Nativo</span>
             </div>
-            <div class="lang-row">
-              <span>Inglés</span>
-              <span class="badge" aria-label="nivel fluido">Fluido</span>
+            <div class="lang-item">
+              <span class="lang-name">Inglés</span>
+              <span class="badge lang-level">Fluido</span>
             </div>
-          </aside>
+          </div>
         </div>
       </div>
     </section>
   </main>
 </main>
+
+  <!-- ===== JavaScript para animaciones ===== -->
+  <script>
+    // Efecto Typewriter para el título
+    const typewriterText = document.getElementById('typewriter-text');
+    const text = 'Estudiante de Ingeniería de Sistemas de Información';
+    let index = 0;
+
+    function typeWriter() {
+      if (index < text.length) {
+        typewriterText.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 50); // Velocidad de escritura (ms por carácter)
+      }
+    }
+
+    // Iniciar el efecto después de que la página cargue
+    window.addEventListener('load', () => {
+      setTimeout(typeWriter, 800); // Delay antes de empezar a escribir
+    });
+
+    // Animaciones al hacer scroll (Intersection Observer)
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observar elementos con animación en la sección Sobre Mí
+    document.addEventListener('DOMContentLoaded', () => {
+      const animatedElements = document.querySelectorAll('.about .card, .skills-section .skills-category');
+      animatedElements.forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
 
   <!-- ===== Footer ===== -->
   <footer class="site-footer">
