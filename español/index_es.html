@@ -1,36 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio personal de Pedro Varona Parra" />
-  <title>Mi Portfolio</title>
-  <link rel="stylesheet" href="../cssportfolio.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio personal de Pedro Varona Parra">
+  <title>Pedro Varona | Portfolio</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/home.css">
 </head>
 <body id="top">
 
-  <!-- ===== NavBar ===== -->
-  <header class="topbar">
-    <div class="container">
-      <a class="brand" href="index_es.html" aria-label="Ir al inicio">Pedro Varona</a>
-
-      <div class="right-side">
-        <nav class="nav">
-          <a href="index_es.html" class="active">Sobre mí</a>
-          <a href=educacion_es.html>Educación</a>
-          <a href=proyectos_es.html>Proyectos</a>
-          <a href="contacto_es.html">Contacto</a>
-        </nav>
-        <div class="lang-switch" role="group" aria-label="Seleccion idioma">
-          <button type="button" class="active" aria-pressed="true">ES</button>
-          <button type="button" aria-pressed="false" onclick="window.location.href='../english/index_en.html'">EN</button>
-        </div>
-      </div>
-    </div>
-  </header>
+  <div id="header"></div>
 
   <main>
-    <!-- ===== Portada ===== -->
     <section id="hero" class="hero">
       <div class="hero-content">
         <h1 class="hero-name animate-fade-in">Pedro Varona</h1>
@@ -43,7 +27,6 @@
           <a href="YOUR_CV_URL_HERE" target="_blank" rel="noopener noreferrer" class="btn btn-hero-outline">Currículum</a>
         </div>
       </div>
-      <!-- Flecha indicadora de scroll -->
       <a href="#sobre-mi" class="scroll-indicator animate-bounce-in" aria-label="Ver más contenido">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="6 9 12 15 18 9"></polyline>
@@ -51,7 +34,6 @@
       </a>
     </section>
 
-    <!-- ===== Sobre mí ===== -->
     <section id="sobre-mi" class="about">
       <div class="shell">
         <h2 class="section-title">Sobre Mí</h2>
@@ -77,7 +59,7 @@
     <section id="habilidades" class="skills-section">
       <div class="shell">
         <h2 class="section-title">Habilidades Técnicas</h2>
-        
+
         <!-- Programación -->
         <div class="skills-category">
           <h3 class="category-title">
@@ -284,7 +266,6 @@
       </div>
     </section>
   </main>
-</main>
 
   <!-- ===== JavaScript para animaciones ===== -->
   <script>
@@ -329,35 +310,8 @@
     });
   </script>
 
-  <!-- ===== Footer ===== -->
-  <footer class="site-footer">
-    <div class="shell">
-      <div class="footer-left">
-        <div class="copyright">© 2025 Pedro Varona. Todos los derechos reservados.</div>
-      </div>
+  <!-- ===== Footer (cargado dinámicamente) ===== -->
+  <div id="footer"></div>
 
-      <div class="footer-right">
-        <div class="socials" aria-label="Enlaces sociales">
-          <a href="https://www.linkedin.com/in/pedrovaronaparra/" target="_blank" aria-label="LinkedIn" onmouseover="this.style.color='#0A66C2'" onmouseout="this.style.color=''">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8.5h5V24H0V8.5zM8.5 8.5h4.79v2.07h.07c.67-1.27 2.3-2.6 4.73-2.6 5.05 0 5.98 3.33 5.98 7.66V24h-5V16.3c0-1.86-.03-4.26-2.6-4.26-2.6 0-3 2.04-3 4.14V24H8.5V8.5z" fill="currentColor"/>
-            </svg>
-          </a>
-
-          <a href="https://github.com/pedrovarona" target="_blank" aria-label="GitHub" onmouseover="this.style.color='#181717'" onmouseout="this.style.color=''">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.38 7.86 10.9.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.36-1.3-1.72-1.3-1.72-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.75.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.17 1.18a11 11 0 012.88-.39c.98 0 1.98.13 2.89.39 2.19-1.5 3.16-1.18 3.16-1.18.64 1.59.24 2.77.12 3.06.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.28 5.68.42.36.8 1.08.8 2.18 0 1.58-.01 2.86-.01 3.25 0 .31.21.68.8.56C20.2 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z" fill="currentColor"/>
-            </svg>
-          </a>
-
-          <a href="mailto:pedro.varona.parra@icloud.com" target="_blank" aria-label="Enviar correo" onmouseover="this.style.color='#D44638'" onmouseout="this.style.color=''">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
-            </svg>
-          </a>
-
-        </div>
-      </div>
-    </footer>
-</body>
-</html>
+  <!-- Cargar componentes -->
+  <script src="../js/loadComponents.js"></script>

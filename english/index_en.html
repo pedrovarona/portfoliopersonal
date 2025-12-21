@@ -1,36 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio personal de Pedro Varona Parra" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio personal de Pedro Varona Parra">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="../cssportfolio.css" />
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/home.css">
 </head>
 <body id="top">
 
-  <!-- ===== NavBar ===== -->
-  <header class="topbar">
-    <div class="container">
-  <a class="brand" href="index_en.html" aria-label="Go to homepage">Pedro Varona</a>
-
-      <div class="right-side">
-        <nav class="nav">
-          <a href="index_en.html" class = "active">About me</a>
-          <a href=education_en.html>Education</a>
-          <a href=projects_en.html>Projects</a>
-          <a href="contact_en.html">Contact</a>
-        </nav>
-        <div class="lang-switch" role="group" aria-label="Seleccion idioma">
-          <button type="button" aria-pressed="false" onclick="window.location.href='../español/index_es.html'">ES</button>
-          <button type="button" class="active" aria-pressed="true">EN</button>
-        </div>
-      </div>
-    </div>
-  </header>
+  <div id="header"></div>
 
   <main>
-    <!-- ===== Hero ===== -->
     <section id="hero" class="hero">
       <h1 class="hero-name">Pedro Varona</h1>
       <h2 class="hero-title">Information Systems Engineering Student</h2>
@@ -43,11 +27,10 @@
       </div>
     </section>
 
-    <!-- ===== About me ===== -->
     <section id="about-me" class="about">
       <div class="shell">
         <div class="about-grid">
-          <!-- Perfil -->
+          
           <article class="card profile">
             <h3>About me</h3>
             <p>
@@ -62,7 +45,6 @@
             </p>
           </article>
 
-          <!-- Technical skills -->
           <aside class="card skills">
             <h3>Technical Skills</h3>
             <div class="pillset">
@@ -78,8 +60,7 @@
           </aside>
 
           <!-- Languages -->
-          <aside class="card languages">
-            <h3>Languages</h3>
+          < <h3>Languages</h3>
             <div class="lang-row">
               <span>Spanish</span>
               <span class="badge" aria-label="native level">Native</span>
@@ -94,9 +75,7 @@
     </section>
   </main>
 </main>
-
-  <!-- ===== Footer ===== -->
-  <footer class="site-footer">
+>
     <div class="shell">
       <div class="footer-left">
         <div class="copyright">© 2025 Pedro Varona. Todos los derechos reservados.</div>

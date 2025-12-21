@@ -1,63 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio personal de Pedro Varona Parra" />
-  <title>Mi Portfolio</title>
-  <link rel="stylesheet" href="../cssportfolio.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio personal de Pedro Varona Parra">
+  <title>Pedro Varona | Portfolio</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/projects.css">
 </head>
 <body id="top" class="offset-nav">
 
-  <!-- ===== NavBar ===== -->
-  <header class="topbar">
-    <div class="container">
-      <a class="brand" href="index_es.html" aria-label="Ir al inicio">Pedro Varona</a>
+  <div id="header"></div>
 
-      <div class="right-side">
-        <nav class="nav">
-          <a href="index_es.html">Sobre mí</a>
-          <a href=educacion_es.html>Educación</a>
-          <a href=proyectos_es.html class="active">Proyectos</a>
-          <a href="contacto_es.html">Contacto</a>
-        </nav>
-        <div class="lang-switch" role="group" aria-label="Seleccion idioma">
-            <button type="button" class="active" aria-pressed="true">ES</button>
-          <button type="button" aria-pressed="false" onclick="window.location.href='../english/projects_en.html'">EN</button>
-        </div>
-      </div>
-    </div>
-  </header>
-    <!-- ===== Proyectos ===== -->
+  <main>
     <section id="proyectos" class="projects">
       <div class="shell">
-        <h2 class="section-title">Proyectos</h2>
+        <h2 class="section-title-timeline">Proyectos</h2>
 
         <div class="proj-grid">
+          
           <article class="card proj-card">
             <div class="proj-icon">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="3" y="4" width="18" height="3" rx="1.2" fill="currentColor" />
-                <rect x="3" y="9" width="18" height="3" rx="1.2" fill="currentColor" />
-                <rect x="3" y="14" width="10" height="3" rx="1.2" fill="currentColor" />
-                <path d="M17 7v4a1 1 0 0 1-1.4.9c-.2-.09-.3-.24-.33-.4V8.6l-1 .4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <rect x="3" y="4" width="14" height="16" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/>
+                <path d="M18 8c0-1.1.9-2 2-2v10c-1.1 0-2-.9-2-2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                <path d="M8 9h6M8 12h6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                <circle cx="6.5" cy="17.5" r="1" fill="currentColor"/>
               </svg>
             </div>
             <div class="proj-tags">
-              <span class="badge status done">Completado</span>
-              <span class="badge kind">Proyecto Académico</span>
+              <span class="status-text done">● Completado</span>
+              <span class="badge kind">Académico</span>
             </div>
-            <h3>Base de Datos SQL inspirada en Spotify</h3>
-            <p class="proj-desc">Creamos un diagrama ER, construímos el esquema y completamos las tablas con datos de ejemplo. Analizamos la información para identificar géneros populares, artistas destacados y preferencias del público, con el fin de conocer y contar con una base de datos desarrollada donde poder filtrar segun diferentes características.</p>
+            <h3>Aplicación de Recetario (Saborea)</h3>
+            <p class="proj-desc">Creamos una aplicación social donde poder crear diferentes recetas, publicarlas, crear un menú semanal, consultar recetas de otros usuarios, sistema de login y gestión de cuentas.</p>
             <h4>Tecnologías utilizadas</h4>
             <div class="pillset small">
-              <span class="pill">SQL</span>
-              <span class="pill">Diseño de Bases de Datos</span>
-              <span class="pill">Modelado ER</span>
+              <span class="pill">HTML</span> <span class="pill">CSS</span>
+              <span class="pill">Bootstrap</span> <span class="pill">JavaScript</span>
+              <span class="pill">Python</span> <span class="pill">SQL</span>
             </div>
+            <a href="https://github.com/victorinho09/Proyecto_Ingenieria_Software" target="_blank" rel="noopener noreferrer" class="certificate-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                </svg>
+                <span>Ver</span>
+              </a>
           </article>
 
-          <!-- Página Web Personal (En curso) -->
           <article class="card proj-card">
             <div class="proj-icon">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -68,19 +60,54 @@
               </svg>
             </div>
             <div class="proj-tags">
-              <span class="badge status progress">En curso</span>
-              <span class="badge kind">Proyecto Personal</span>
+              <span class="status-text done">● Completado</span>
+              <span class="badge kind">Personal</span>
             </div>
             <h3>Página Web Personal</h3>
             <p class="proj-desc">Creación de una página web que muestre información personal, académica, de habilidades y contacto. Pagina con diferentes funcionalidades, redirección al contacto, cambio de idioma, y apartado para poder observar y/o probar los demás proyectos creados.</p>
             <h4>Tecnologías utilizadas</h4>
             <div class="pillset small">
-              <span class="pill">HTML</span><span class="pill">CSS</span>
+              <span class="pill">HTML</span> <span class="pill">CSS</span>
               <span class="pill">Bootstrap</span>
             </div>
+            <a href="https://github.com/pedrovarona/portfoliopersonal" target="_blank" rel="noopener noreferrer" class="certificate-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+              </svg>
+              <span>Ver</span>
+            </a>
           </article>
 
-          <!-- IA (En curso) -->
+          <!-- Estudio de relación horas de sueño/rendimiento del estudiante -->
+          <article class="card proj-card">
+            <div class="proj-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="3" y="10" width="18" height="6" rx="1.2" fill="currentColor" opacity="0.12"/>
+                <rect x="4" y="11" width="6" height="3" rx="0.6" fill="currentColor"/>
+                <rect x="11" y="11" width="4" height="3" rx="0.6" fill="currentColor"/>
+                <rect x="16" y="11" width="3" height="3" rx="0.6" fill="currentColor"/>
+                <path d="M5 8c1-1 3-1 4 0s3 0 4-1 3 0 4 1" stroke="currentColor" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="proj-tags">
+              <span class="status-text done">● Completado</span>
+              <span class="badge kind">Académico</span>
+            </div>
+            <h3>Estudio de relación horas de sueño/rendimiento del estudiante</h3>
+            <p class="proj-desc">Estudio de datos mediante RStudio para medir y observar la relación, tendencia y observaciones respecto a las horas y calidad del sueño con el rendimiento académico dele studiante.</p>
+            <h4>Tecnologías utilizadas</h4>
+            <div class="pillset small">
+              <span class="pill">R</span>
+            </div>
+            <a href="https://github.com/pedrovarona/Proyecto-Estadistica/tree/main" target="_blank" rel="noopener noreferrer" class="certificate-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+              </svg>
+              <span>Ver</span>
+            </a>
+          </article>
+
+          <!-- Juego de ajedrez contra IA -->
           <article class="card proj-card">
             <div class="proj-icon">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -92,75 +119,42 @@
               </svg>
             </div>
             <div class="proj-tags">
-              <span class="badge status progress">En curso</span>
-              <span class="badge kind">Proyecto Académico</span>
+              <span class="status-text done">● Completado</span>
+              <span class="badge kind">Académico</span>
             </div>
             <h3>Juego de ajedrez contra IA óptima</h3>
             <p class="proj-desc">Creación mediante python del juego Ajedrez (piezas, tablero, movimientos, jugadores). Uso de una IA entrenada con machine learning para ser óptima en el propio juego creado.</p>
             <h4>Tecnologías utilizadas</h4>
             <div class="pillset small">
-              <span class="pill">Python</span><span class="pill">Machine Learning</span>
-              
+              <span class="pill">Python</span> <span class="pill">Machine Learning</span>
             </div>
           </article>
 
-          <!-- Estudio de relación horas de sueño/rendimiento del estudiante  (En curso) -->
-           <article class="card proj-card">
-            <div class="proj-icon">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="3" y="10" width="18" height="6" rx="1.2" fill="currentColor" opacity="0.12"/>
-                <rect x="4" y="11" width="6" height="3" rx="0.6" fill="currentColor"/>
-                <rect x="11" y="11" width="4" height="3" rx="0.6" fill="currentColor"/>
-                <rect x="16" y="11" width="3" height="3" rx="0.6" fill="currentColor"/>
-                <path d="M5 8c1-1 3-1 4 0s3 0 4-1 3 0 4 1" stroke="currentColor" stroke-width="1.1" fill="none" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="proj-tags">
-              <span class="badge status done">Completado</span>
-              <span class="badge kind">Proyecto Académico</span>
-            </div>
-            <h3>Estudio de relación horas de sueño/rendimiento del estudiante</h3>
-            <p class="proj-desc">Estudio de datos mediante RStudio para medir y observar la relación, tendencia y observaciones respecto a las horas y calidad del sueño con el rendimiento académico dele studiante.</p>
-            <h4>Tecnologías utilizadas</h4>
-            <div class="pillset small">
-              <span class="pill">R</span>
-            </div>
-            <div style="margin-top: 16px; text-align: right;">
-              <a href="https://github.com/pedrovarona/Proyecto-Estadistica/tree/main" target="_blank" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; font-size: 14px; text-decoration: none;">
-                Ver proyecto
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- App Recetario (En curso) -->
+          <!-- Base de Datos SQL -->
           <article class="card proj-card">
             <div class="proj-icon">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="3" y="4" width="14" height="16" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/>
-                <path d="M18 8c0-1.1.9-2 2-2v10c-1.1 0-2-.9-2-2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-                <path d="M8 9h6M8 12h6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-                <circle cx="6.5" cy="17.5" r="1" fill="currentColor"/>
+                <rect x="3" y="4" width="18" height="3" rx="1.2" fill="currentColor" />
+                <rect x="3" y="9" width="18" height="3" rx="1.2" fill="currentColor" />
+                <rect x="3" y="14" width="10" height="3" rx="1.2" fill="currentColor" />
+                <path d="M17 7v4a1 1 0 0 1-1.4.9c-.2-.09-.3-.24-.33-.4V8.6l-1 .4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
               </svg>
             </div>
             <div class="proj-tags">
-              <span class="badge status progress">En curso</span>
-              <span class="badge kind">Proyecto Académico</span>
+              <span class="status-text done">● Completado</span>
+              <span class="badge kind">Académico</span>
             </div>
-            <h3>Aplicación de Recetario (Saborea)</h3>
-            <p class="proj-desc">Creamos una aplicación social donde poder crear diferentes recetas, publicarlas, crear un menú semanal, consultar recetas de otros usuarios, sistema de login y gestión de cuentas.</p>
+            <h3>Base de Datos SQL inspirada en Spotify</h3>
+            <p class="proj-desc">Creamos un diagrama ER, construímos el esquema y completamos las tablas con datos de ejemplo. Analizamos la información para identificar géneros populares, artistas destacados y preferencias del público, con el fin de conocer y contar con una base de datos desarrollada donde poder filtrar segun diferentes características.</p>
             <h4>Tecnologías utilizadas</h4>
             <div class="pillset small">
-              <span class="pill">HTML</span><span class="pill">CSS</span>
-              <span class="pill">Bootstrap</span><span class="pill">JavaScript</span>
-              <span class="pill">Python</span><span class="pill">SQL</span>
+              <span class="pill">SQL</span>
+              <span class="pill">Diseño de Bases de Datos</span>
+              <span class="pill">Modelado ER</span>
             </div>
           </article>
 
-          <!-- Web Café (En curso) -->
+          <!-- Web Café Royal Coffee -->
           <article class="card proj-card">
             <div class="proj-icon">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -170,8 +164,8 @@
               </svg>
             </div>
             <div class="proj-tags">
-              <span class="badge status progress">En curso</span>
-              <span class="badge kind">Proyecto Académico</span>
+              <span class="status-text done">● Completado</span>
+              <span class="badge kind">Académico</span>
             </div>
             <h3>Página web sobre cafés (Royal Cofee)</h3>
             <p class="proj-desc">Creamos una pagina web de un café donde poder crear diferentes recetas, publicarlas, crear un menú semanal, consultar recetas de otros usuarios, sistema de login y gestión de cuentas.</p>
@@ -185,36 +179,10 @@
         </div>
       </div>
     </section>
-    </section>
+  </main>
 
-    <!-- ===== Footer ===== -->
-    <footer class="site-footer">
-      <div class="shell">
-        <div class="footer-left">
-          <div class="copyright">© 2025 Pedro Varona. Todos los derechos reservados.</div>
-        </div>
+  <div id="footer"></div>
 
-        <div class="footer-right">
-          <div class="socials" aria-label="Enlaces sociales">
-            <a href="https://www.linkedin.com/in/pedrovaronaparra/" target="_blank" aria-label="LinkedIn" onmouseover="this.style.color='#0A66C2'" onmouseout="this.style.color=''">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8.5h5V24H0V8.5zM8.5 8.5h4.79v2.07h.07c.67-1.27 2.3-2.6 4.73-2.6 5.05 0 5.98 3.33 5.98 7.66V24h-5V16.3c0-1.86-.03-4.26-2.6-4.26-2.6 0-3 2.04-3 4.14V24H8.5V8.5z" fill="currentColor"/>
-            </svg>
-          </a>
-
-          <a href="https://github.com/pedrovarona" target="_blank" aria-label="GitHub" onmouseover="this.style.color='#181717'" onmouseout="this.style.color=''">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.38 7.86 10.9.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.36-1.3-1.72-1.3-1.72-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.75.41-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.17 1.18a11 11 0 012.88-.39c.98 0 1.98.13 2.89.39 2.19-1.5 3.16-1.18 3.16-1.18.64 1.59.24 2.77.12 3.06.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.28 5.68.42.36.8 1.08.8 2.18 0 1.58-.01 2.86-.01 3.25 0 .31.21.68.8.56C20.2 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z" fill="currentColor"/>
-            </svg>
-          </a>
-
-          <a href="mailto:pedro.varona.parra@icloud.com" target="_blank" aria-label="Enviar correo" onmouseover="this.style.color='#D44638'" onmouseout="this.style.color=''">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
-            </svg>
-          </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+  <script src="../js/loadComponents.js"></script>
+</body>
+</html>
