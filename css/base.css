@@ -20,6 +20,60 @@ section{
 
 main{
   padding-top: var(--header-h);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .offset-nav{
@@ -80,6 +134,7 @@ main{
   color: #1f2937;
   position: relative;
   padding: 12px 0 16px;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .section-title-timeline::after{
@@ -92,6 +147,7 @@ main{
   height: 4px;
   background: #3b82f6;
   border-radius: 2px;
+  animation: scaleIn 0.6s ease-out 0.3s both;
 }
 
 /* BOTONES */
