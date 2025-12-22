@@ -1,117 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio personal de Pedro Varona Parra" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="../css/base.css" />
-  <link rel="stylesheet" href="../css/header.css" />
-  <link rel="stylesheet" href="../css/footer.css" />
-  <link rel="stylesheet" href="../css/education.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pedro Varona Parra Personal Portfolio">
+  <title>Pedro Varona | Portfolio</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/education.css">
 </head>
 <body id="top" class="offset-nav">
 
-  <!-- ===== NavBar (loaded dynamically) ===== -->
   <div id="header"></div>
-    <!-- ===== Education: University, High School and Certifications ===== -->
+
+  <main>
     <section id="education" class="edu">
       <div class="shell">
-        <h2 class="section-title">Education</h2>
+        <h2 class="section-title-timeline">Academic Education</h2>
 
-        <!-- Universidad -->
-        <article class="card edu-card">
-          <header class="edu-head">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="currentColor" d="M12 3 1 8l11 5 9-4.09V17h2V8L12 3Zm0 9L4.18 8 12 4.82 19.82 8 12 12Zm-6 2.5V16a6 6 0 0 0 12 0v-1.5l-6 2.73-6-2.73Z"/>
-            </svg>
-            <h3>Ceu San Pablo University</h3>
-          </header>
-
-          <p class="degree">Bachelor's Degree in Information Systems Engineering</p>
-
-          <div class="meta">
-            <span class="meta-item">
-              <svg class="i" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg>
-              Madrid, Spain
-            </span>
-            <span class="meta-item">
-              <svg class="i" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10v2h3a1 1 0 0 1 1 1v15a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a1 1 0 0 1 1-1h3V2Zm12 6H5v12h14V8ZM9 2v2h6V2H9Z"/></svg>
-              September 2022 — Present
-            </span>
+        <div class="timeline">
+          
+          <div class="timeline-item timeline-right">
+            <div class="timeline-icon timeline-icon-university">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 13.27L3.18 11 12 5.73 20.82 11 12 16.27z"/>
+                <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+              </svg>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Information Systems Engineering</h3>
+                <span class="timeline-date">2021 - Present</span>
+              </div>
+              <div class="timeline-institution">
+                <svg class="institution-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                </svg>
+                <span>CEU San Pablo University</span>
+              </div>
+              <p class="timeline-description">
+                I am currently pursuing a degree in Computer Engineering, where I am acquiring a solid education in software development, systems architecture and technology project management. This stage is allowing me to strengthen my technical and analytical skills, as well as to deeply understand how technology can provide innovative solutions to different fields.
+              </p>
+              <div class="timeline-chips">
+                <span class="chip">Programming</span>
+                <span class="chip">Web Systems</span>
+                <span class="chip">Artificial Intelligence</span>
+                <span class="chip">Computing Models</span>
+                <span class="chip">Computer Networks</span>
+                <span class="chip">Software Engineering</span>
+                <span class="chip">Financial Analysis & Management</span>
+              </div>
+            </div>
           </div>
 
-          <h4 class="kicker">Relevant Courses:</h4>
-          <div class="pillset small">
-            <span class="pill">Programming I & II</span>
-            <span class="pill">Artificial Intelligence</span>
-            <span class="pill">Distributed Systems Programming</span>
-            <span class="pill">Web Systems I & II</span>
-            <span class="pill">Software Engineering</span>
-            <span class="pill">Computer Networks I & II</span>
-            <span class="pill">Theory of Computation</span>
-            <span class="pill">Foundations of Computer Science</span>
-            <span class="pill">Mathematics I & II</span>
-            <span class="pill">Statistics</span>
+          <div class="timeline-item timeline-left">
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Introduction to AI and Prompt Engineering</h3>
+                <span class="timeline-date">July 2025</span>
+              </div>
+              <div class="timeline-institution">
+                <svg class="institution-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                </svg>
+                <span>Founderz</span>
+              </div>
+              <p class="timeline-description">
+                Course focused on the fundamentals of artificial intelligence and prompt engineering techniques to optimize interactions with language models.
+              </p>
+              <div class="timeline-chips">
+                <span class="chip">Artificial Intelligence</span>
+                <span class="chip">Prompt Engineering</span>
+                <span class="chip">LLM</span>
+              </div>
+              <a href="https://learn.founderz.com/certificado/curso-online-introduccion-a-la-ia-y-prompt-engineering/d06c0594-cf8f-4b80-9347-0f97fe504121" target="_blank" rel="noopener noreferrer" class="certificate-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                </svg>
+                <span>View</span>
+              </a>
+            </div>
+            <div class="timeline-icon timeline-icon-course">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/>
+              </svg>
+            </div>
           </div>
 
-          <div class="highlight">
-            <strong>Featured Project:</strong>
-            <p>University project: SQL database inspired by Spotify.</p>
+          <!-- Microsoft AI Course -->
+          <div class="timeline-item timeline-right">
+            <div class="timeline-icon timeline-icon-course">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/>
+              </svg>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Transform your business with Microsoft AI</h3>
+                <span class="timeline-date">July 2025</span>
+              </div>
+              <div class="timeline-institution">
+                <svg class="institution-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                </svg>
+                <span>Microsoft Learning</span>
+              </div>
+              <p class="timeline-description">
+                Introductory training program that addressed the impact of artificial intelligence in the business sphere, as well as the general use of Microsoft and Azure AI solutions. The course offered a global vision about the potential of AI for digital transformation, process automation and decision making.
+              </p>
+              <div class="timeline-chips">
+                <span class="chip">Business AI</span>
+                <span class="chip">Azure AI</span>
+                <span class="chip">Digital Transformation</span>
+              </div>
+              <a href="https://learn.microsoft.com/en-us/users/pedrovarona-2564/achievements/d97hf3bj?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer" class="certificate-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                </svg>
+                <span>View</span>
+              </a>
+            </div>
           </div>
-        </article>
 
-        <!-- Bachillerato -->
-        <article class="card edu-card">
-          <header class="edu-head">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="currentColor" d="M12 3 1 8l11 5 9-4.09V17h2V8L12 3Zm0 9L4.18 8 12 4.82 19.82 8 12 12Zm-6 2.5V16a6 6 0 0 0 12 0v-1.5l-6 2.73-6-2.73Z"/>
-            </svg>
-            <h3>High School</h3>
-          </header>
-          <p class="degree">Ceu Claudio Coello High School</p>
-          <div class="meta">
-            <span class="meta-item">
-              <svg class="i" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg>
-              Madrid, Spain
-            </span>
-            <span class="meta-item">
-              <svg class="i" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10v2h3a1 1 0 0 1 1 1v15a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a1 1 0 0 1 1-1h3V2Zm12 6H5v12h14V8ZM9 2v2h6V2H9Z"/></svg>
-              2019 — 2022
-            </span>
+          <!-- Employability Course -->
+          <div class="timeline-item timeline-left">
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Improve your employability by developing your capacity to (intra)entrepreneur</h3>
+                <span class="timeline-date">May 2025</span>
+              </div>
+              <div class="timeline-institution">
+                <svg class="institution-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                </svg>
+                <span>BeForGet</span>
+              </div>
+              <p class="timeline-description">
+                Workshop focused on developing skills to recognize and communicate my professional value. Through different dynamics and practical exercises, I learned to identify my strengths, create a differentiated professional profile and develop key entrepreneurship and intrapreneurship competencies that enhance my employability.
+              </p>
+              <div class="timeline-chips">
+                <span class="chip">Entrepreneurship</span>
+                <span class="chip">Employability</span>
+                <span class="chip">Intrapreneurship</span>
+              </div>
+              <a href="https://www.credential.net/2300e992-da95-4206-9920-6dde6193fe1a#acc.BSwZtprf" target="_blank" rel="noopener noreferrer" class="certificate-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                </svg>
+                <span>View</span>
+              </a>
+            </div>
+            <div class="timeline-icon timeline-icon-course">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/>
+              </svg>
+            </div>
           </div>
 
-          <h4 class="kicker">Highlighted Subjects:</h4>
-          <div class="pillset small">
-            <span class="pill">Mathematics I & II</span>
-            <span class="pill">Physics I & II</span>
-            <span class="pill">Technology</span>
-            <span class="pill">Technical Drawing</span>
+          <!-- High School -->
+          <div class="timeline-item timeline-right">
+            <div class="timeline-icon timeline-icon-education">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+              </svg>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Technology High School</h3>
+                <span class="timeline-date">2019 - 2021</span>
+              </div>
+              <div class="timeline-institution">
+                <svg class="institution-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                </svg>
+                <span>CEU San Pablo School</span>
+              </div>
+              <p class="timeline-description">
+                I studied Technology High School with a focus on science and technology, which allowed me to acquire a solid foundation in technical and scientific subjects. During this stage I developed logical thinking, analytical capacity and interest in innovation and problem solving, laying the foundations for my training in the technology field.
+              </p>
+              <div class="timeline-chips">
+                <span class="chip">Mathematics</span>
+                <span class="chip">Physics</span>
+                <span class="chip">Technical Drawing</span>
+                <span class="chip">Technology</span>
+              </div>
+            </div>
           </div>
-        </article>
 
-        <!-- Certificaciones y formación -->
-        <article class="card cert-list">
-          <header class="edu-head">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="currentColor" d="M5 3h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-3l-4 5-4-5H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/>
-            </svg>
-            <h3>Certifications & Training</h3>
-          </header>
-          <ul class="cert-ul">
-            <li><span>Introduction to AI and Prompt Engineering (Founderz)</span></li>
-            <li><span>Transform your business with Microsoft AI (Microsoft Learning)</span></li>
-            <li><span>Improve your employability by developing your capacity to (intra)entrepreneur (BeForGet)</span></li>
-          </ul>
-        </article>
+        </div>
       </div>
     </section>
-    </section>
+  </main>
 
-    <!-- ===== Footer (loaded dynamically) ===== -->
-    <div id="footer"></div>
+  <div id="footer"></div>
 
-    <!-- Load components -->
-    <script src="../js/loadComponents.js"></script>
-  </body>
+  <script src="../js/loadComponents.js"></script>
+</body>
 </html>
