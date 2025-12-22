@@ -14,7 +14,7 @@
   function getComponentsPath() {
     const path = decodeURIComponent(window.location.pathname);
     if (path.includes('/español/') || path.includes('/espanol/') || path.includes('/english/')) {
-      return '/components/';
+      return '../components/';
     }
     return 'components/';
   }
