@@ -23,4 +23,4 @@ Todos los archivos comparten una barra de navegación superior y un pie de pági
 ## 🚀 Cómo visualizar el portfolio
 
 1. A través del siguiente enlace:
-  https://pedrovarona.github.io/portfoliopersonal/espa%C3%B1ol/index_es.html
+https://pedrovarona.github.io/portfoliopersonal/
